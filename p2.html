@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="p2.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "title">freeCodeCamp Survey Form</h1>
+    <p id = "description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    <form id = "survey-form">
+        <label for = "name" id = "name-label" class = "labels">Name</label>
+            <input type = "text"  id = "name" placeholder="Enter the name" class = "input-text" required>
+        <label for = "email" id = "email-label" class = "labels">Email</label>
+            <input type = "email" id = "email" placeholder="Enter the Email-id" class = "input-text" required>
+        <label for = "number" id = "number-label" class = "labels">Age</label>
+            <input type = "number" id = "number" placeholder="Enter the age" class = "input-text" min="10" max="30">
+        <label for = "dropdown" id = "dropdown-label">What are you currently doing?</label>
+        <select id = "dropdown">
+            <option value = "Student">Student</option>
+            <option value = "FTJ">Full-time-job</option>
+            <option value = "FTL">Full-time-learner</option>
+        </select>
+        <fieldset>
+            <legend>Would you recommend fcc to a friend?</legend>
+            <div>
+            <input type = "radio" id = "yes" name = "recommend" value = "Yes">
+            <label for = "yes" class = "labels-rad">Yes</label>
+            </div>
+            <div>
+            <input type = "radio" id = "no" name = "recommend" value = "No">
+            <label for = "no" class = "labels-rad">No</label>
+            </div>
+            <div>
+            <input type = "radio" id = "nil" name = "recommend" value = "Not Sure">
+            <label for = "nil" class = "labels-rad">Not Sure</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Courses learnt in fcc:</legend>
+            <div>
+            <input type = "checkbox" id = "frontend" value = "Front-end development">
+            <label for = "frontend" class="labels-rad">Front-end development</label>
+            </div>
+            <div>
+            <input type = "checkbox" id = "backend" value = "Back-end development">
+            <label for = "frontend" class = "labels-rad">Back-end development</label>
+            </div>
+            <div>
+            <input type = "checkbox" id = "Data-Science" value = "Data-Science">
+            <label for = "Data-Science" class = "labels-rad">Data-Science</label>
+            </div>
+        </fieldset>
+        <div class = "textarea">
+            <label for = "textar" class = "labels">Any Comments</label>
+            <textarea id = "textar" rows = "10" cols= "20" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class = "submit-btn">
+        <input type = "submit" id = "submit">
+        </div>
+    </form>
+</body>
+</html>
